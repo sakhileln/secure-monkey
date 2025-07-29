@@ -34,11 +34,13 @@ Register a new user account.
 ```json
 {
   "id": 1,
-  "email": "sakhile@monkeyandriver.com",
   "name": "Sakhile Ndlazi",
-  "password": "$2a$10$...",
-  "createdAt": "2025-07-29T10:30:00",
-  "updatedAt": "2025-07-29T10:30:00"
+  "email": "sakhile@monkeyandriver.com",
+  "password": "$2a$10$n49HBcmaUs0U8PsSkP8Wi.VNAUGCXF.KmkZ9P2b4/oJC46chBHg4W",
+  "notificationThreshold": 5,
+  "emailNotifications": true,
+  "createdAt": "2025-07-29T12:17:49.736220584",
+  "updatedAt": null
 }
 ```
 
@@ -63,11 +65,11 @@ Authenticate user and receive JWT token.
 **Response:**
 ```json
 {
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
-  "type": "Bearer",
-  "id": 1,
-  "email": "sakhile@monkeyriver.co.za",
-  "name": "Sakhile Ndlazi"
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJz...U",
+    "id": 1,
+    "email": "sakhile@monkeyandriver.com",
+    "name": "Sakhile Ndlazi",
+    "type": "Bearer"
 }
 ```
 
